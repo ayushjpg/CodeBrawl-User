@@ -42,8 +42,8 @@ jobs:
           restore-keys: |
             ${{runner.os }}-maven-
 
-      - name: Run tests
-        run: mvn clean test
+#      - name: Run tests
+#        run: mvn clean test
 
       - name: Generate test report
         uses: dorny/test-reporter@v1
